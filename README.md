@@ -13,3 +13,26 @@ Maddie Stone is a security researcher for Google’s Project Zero. In this episo
 Own comment: Maddie is doing very interesting job. In the episode was lots of discussion of the attackers nature that are those real criminals trying to make out some money or government's own armies attacking other states. Unfortunately this is modern warfare and I guess it's a lot cheaper and easier than using real weapons.
 
 Reference: https://darknetdiaries.com/episode/127/
+
+## Att&ck Enterprise Matrix
+Explanation of tactic: it's a reason what attacker wants to gain by hacking. It answers why hacker is doing this.
+Example Reconnaissance, getting information for future operations
+
+Explanation of technique: it's a technique what attacker is using in hacking. It answers how hacker is doing this.
+Example Gather victim identity information
+
+Explanation of procedure: it describes the way attacker is using different techniques to gain his/her goals. 
+Example Magic hound: Magic Hound has compromised personal email accounts through the use of legitimate credentials and gathered additional victim information
+
+Reference: https://attack.mitre.org/resources/faq/ 
+https://attack.mitre.org/matrices/enterprise/
+
+## Comparing Cyber Kill Chain and ATT&CK Enterprise matrix 
+There are similarities in both models. Both try to first understand why level and then there are more specified ways to defend company from different types of attacking techniques. ATT&CK is more comprehensive and detailed model. It could be used in security service providers. Cyber Kill Chain supports risk management and investing into security things. It's easier to apply when company's security personnel are planning how to build and maintain good security infrastructure. I think these could be used in midsize or larger companies. Especially ATT&CK is for very large companies who has their own security departments for implementing it.
+
+## Security incident example
+My example is TietoEvry's resent ransomware case. This is direct copying as a summary from their press release. One of Tietoevry’s datacenters in Sweden was subject to a ransomware attack during the night of January 19-20.2024. Tietoevry’s monitoring detected the suspicious and unusual activity and Tietoevry was able to stop the attack, limiting its impact to one platform. However, the attack unfortunately impacted several Tietoevry’s customers’ services across industries and has thus been visible in the Swedish society in many ways. Tietoevry initiated the restoration of affected customer services with the highest priority and was able to restore majority of the affected servers in a systematic manner during the first days after the attack, enabling several customers to have their services operational from this stage. However, due to relatively many customer-specific solutions within the affected platform, there have been varying degrees of impact and consequently varying recovery processes. With the exception of efforts continuing with few customers, all other impacted customer services were fully restored by mid-March. Tietoevry’s security experts started to assess the potential attack vectors immediately, including a large-scale data analysis. Our analysis concluded the most probable path used by the attacker to gain unauthorized access to the datacenter. As immediate action from the ransomware attack, Tietoevry has intensified the surveillance of its infrastructure. In light of Tietoevry’s role as a service provider, the criminal nature of the attack and for security reasons, Tietoevry cannot publicly share technical details of the attack. Tietoevry has maintained an active dialogue with the authorities since the attack took place and has shared the findings with them. Tietoevry is at all times committed to respecting contractual obligations and customer confidentiality, thus the company cannot share customer-specific information regarding this case.
+
+So conclusion based on press release summary is that attacker gained access to datacenter and could take control of the servers. Besides the service breaks from couple of days to couple of months, I guess TietoEvry has paid a lot of money to customers for this security breach and SLA's. Business impacts for TietoEvry's customers and their customers has not been told but it's been quite on impact. And story doesn't tell if they have had to pay ransomware about the customers whose services they couln't restore from TietoEvry's side.
+
+Reference: https://www.tietoevry.com/en/newsroom/all-news-and-releases/press-releases/2024/04/tietoevry-conclusions-on-the-ransomware-attack/

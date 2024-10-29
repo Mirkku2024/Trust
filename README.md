@@ -36,3 +36,6 @@ My example is TietoEvry's resent ransomware case. This is direct copying as a su
 So conclusion based on press release summary is that attacker gained access to datacenter and could take control of the servers. Besides the service breaks from couple of days to couple of months, I guess TietoEvry has paid a lot of money to customers for this security breach and SLA's. Business impacts for TietoEvry's customers and their customers has not been told but it's been quite on impact. And story doesn't tell if they have had to pay ransomware about the customers whose services they couln't restore from TietoEvry's side.
 
 Reference: https://www.tietoevry.com/en/newsroom/all-news-and-releases/press-releases/2024/04/tietoevry-conclusions-on-the-ransomware-attack/
+
+## Install Debian on Virtualbox
+Report your work, including the environment (including host OS, the real physical computer used), the steps you took and their results.

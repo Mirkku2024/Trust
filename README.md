@@ -39,3 +39,6 @@ Reference: https://www.tietoevry.com/en/newsroom/all-news-and-releases/press-rel
 
 ## Install Debian on Virtualbox
 Report your work, including the environment (including host OS, the real physical computer used), the steps you took and their results.
+
+Own computer: Windows 10 Pro, Intel Core i3 10100 CPU 3,6 GHz, 64-bit operating system
+

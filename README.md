@@ -42,6 +42,8 @@ Report your work, including the environment (including host OS, the real physica
 
 Own computer: Windows 10 Pro, Intel Core i3 10100 CPU 3,6 GHz, 64-bit operating system
 
+I tried to follow instructions but in real life it was different from instructions all the time. I could download the right debian image. Right after that I got error from missing some python part. I continued installation of virtual machine. It made it 32 bit. I tried to document all the phases and print windows I got. It didn't ask same questions as in instructions. For a while it showd that I have the new virtual machine but pretty soon it turned to status aborted. It happened when I double clicked on it first time. When I tried it again, image flashes on the screen but can't tell what it is. Nothing happens. At this point I stopped trying. 
+
 ![image](https://github.com/user-attachments/assets/9a05da3e-0ba3-4f52-8d7e-9ac5835db497)
 
 ![image](https://github.com/user-attachments/assets/fcd4841d-dd5e-4950-9b09-5d3138f68a8b)

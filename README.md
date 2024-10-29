@@ -42,3 +42,38 @@ Report your work, including the environment (including host OS, the real physica
 
 Own computer: Windows 10 Pro, Intel Core i3 10100 CPU 3,6 GHz, 64-bit operating system
 
+![image](https://github.com/user-attachments/assets/9a05da3e-0ba3-4f52-8d7e-9ac5835db497)
+
+![image](https://github.com/user-attachments/assets/fcd4841d-dd5e-4950-9b09-5d3138f68a8b)
+
+![image](https://github.com/user-attachments/assets/3a633cb6-9e7f-464b-bca5-d9485f588682)
+
+![image](https://github.com/user-attachments/assets/08f9bea9-ff9b-49e8-a968-bf3707429ce1)
+
+![image](https://github.com/user-attachments/assets/284336fe-46bc-4233-8f1f-d48d1c83db8a)
+
+![image](https://github.com/user-attachments/assets/364b73f9-cfb0-4f1a-9dd1-7b0e3d65b7a0)
+
+![image](https://github.com/user-attachments/assets/210fcc8b-3b75-4b57-9927-ecd087855450)
+
+![image](https://github.com/user-attachments/assets/fe7fe8c5-fcbd-416a-901c-bc10d026defa)
+
+![image](https://github.com/user-attachments/assets/a56b3265-fd82-491c-b4e1-725c60148ee0)
+
+![image](https://github.com/user-attachments/assets/d6e408d6-b933-4a42-8114-be8082dd9407)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

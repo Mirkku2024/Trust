@@ -1,7 +1,9 @@
 # Trust
 Homework reports for security course taught by Tero Karvinen
 
-# First homework
+# First homework Adversarial mindset
+Reference: https://terokarvinen.com/trust-to-blockchain/#homework
+
 ## Summary from Cyber kill chain
 Traditional way of defensing network isn't enough anymore. With kill chain model you can gain better understanding of threats. This mitigates risks and vulnerabilities when hackers are targeting your company. There are 7 different phases in kill chain: reconnaissance, weaponization, delivery, exploitation, installation, C2 and actions. You must analyze all attacks and build defense towards them so they wouldn't happen in the future. Also with the knowledge of failed intrusions you can guess attackers next attempt and defend your network against those.
 Own comment: I didn't search how old is this whitepaper. I understand the benefit of this approach but it feels very heavy user tool and needs resources. Is there a way to make this kind of stuff in smaller companies?
@@ -42,7 +44,7 @@ Report your work, including the environment (including host OS, the real physica
 
 Own computer: Windows 10 Pro, Intel Core i3 10100 CPU 3,6 GHz, 64-bit operating system
 
-I tried to follow instructions but in real life it was different from instructions all the time. I could download the right debian image. Right after that I got error from missing some python part. I continued installation of virtual machine. It made it 32 bit. I tried to document all the phases and print windows I got. It didn't ask same questions as in instructions. For a while it showd that I have the new virtual machine but pretty soon it turned to status aborted. It happened when I double clicked on it first time. When I tried it again, image flashes on the screen but can't tell what it is. Nothing happens. At this point I stopped trying. 
+I tried to follow instructions but in real life it was different from instructions all the time. I could download the right debian image. Right after that I got error from missing some python part. I continued installation of virtual machine. It made it 32 bit. I tried to document all the phases and print windows I got. It didn't ask same questions as in instructions. For a while it showd that I have the new virtual machine but pretty soon it turned to status aborted. It happened when I doubleclicked on it first time. When I tried it again, image flashes on the screen but can't tell what it is. Nothing happens. At this point I stopped trying. 
 
 ![image](https://github.com/user-attachments/assets/9a05da3e-0ba3-4f52-8d7e-9ac5835db497)
 
@@ -64,7 +66,31 @@ I tried to follow instructions but in real life it was different from instructio
 
 ![image](https://github.com/user-attachments/assets/d6e408d6-b933-4a42-8114-be8082dd9407)
 
+Reference: https://terokarvinen.com/2021/install-debian-on-virtualbox/
 
+# Second homework Pubkey 
+Reference: https://terokarvinen.com/trust-to-blockchain/#homework
+
+# Summary from  Schneier 2015: Applied Cryptography: Chapter 2 - Protocol Building Blocks
+2.5 Communications Using Public-Key Cryptography
+Whitfield and Hellman invented public-key cryptography in 1976. They used two different keys, the other one was public and the other private. The point is that you can encrypt a message with a public key but it can only opened with certain private key. Example is that Alice sends a message to Bob which she has encrypted with Bob's public key. Bob opens it with using his own private key.
+
+2.6 Digital Signatures
+Ralph Merkle invented digital signature trees which is a basis nowadays. It's faster to sign documents with Public-Key Cryptography and One-Way Hash Functions. In practise Alice makes a one-way hash of a document. Then se encrypts the hash with her private key. Then the document is signed. Alice sends the document and the signed hash to Bob. Then Bob makes a one-way hash of the document that Alice sent. Next Bob is using the digital signature algorithm and decrypts the signed hash with Alice's public key. If the signed hash matches the hash he generated, the signature is valid. Using timestamps you can avoid cheating.
+
+2.7 Digital Signatures With Encryption
+When digital signatures are combined with public-key cryptography, we have the security of encryption and the authenticity of digital signatures. For security you should have two pairs of keys, one for signing and one for encrypting messages. Also timespams are needed.
+
+2.8 Random And Pseudo-Random-Sequence Generation
+"Pseudo-random sequence is one that looks random. The sequence's period should be long enough so that a finite sequence of reasonable length—that is, one that is actually used—is not periodic. For a sequence to be cryptographically secure pseudo-random, it must also be unpredictable. It must be computationally infeasible to predict what the next random bit will be, given complete knowledge of the algorithm or hardware generating the sequence and all of the previous bits in the stream. A sequence generator is real random if it has this additional third property: It cannot be reliably reproduced. If you run the sequence generator twice with the exact same input, you will get two completely unrelated random sequences. The output of a generator satisfying these three properties will be good enough for a one-time pad, key generation, and any other cryptographic applications that require a truly random sequence generator."
+
+Reference: Schneier, P. Applied Cryptography: Protocols, Algorithms and Source Code in C, 20th Anniversary Edition. 2015. Wiley. Readable: https://www.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/ Read: 2.11.2024
+
+## Summary of Rosenbaum 2019: Grokking Bitcoin Chapter 2. Cryptographic hash functions and digital signatures / Digital signatures
+Digital signatures (8 sections, from "Typical use of digital signatures" to "Private key security")
+
+
+Reference: Rosenbaum, K. Grokking Bitcoin. 2019. Manning Publications. New York. Readable: https://learning.oreilly.com/library/view/grokking-bitcoin/9781617294648/ Read: 2.11.2024
 
 
 

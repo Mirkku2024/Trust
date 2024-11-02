@@ -1,6 +1,36 @@
 # Trust
 Homework reports for security course taught by Tero Karvinen
 
+# Second homework Pubkey 
+Reference: https://terokarvinen.com/trust-to-blockchain/#homework
+
+# Summary from  Schneier 2015: Applied Cryptography: Chapter 2 - Protocol Building Blocks
+2.5 Communications Using Public-Key Cryptography
+Whitfield and Hellman invented public-key cryptography in 1976. They used two different keys, the other one was public and the other private. The point is that you can encrypt a message with a public key but it can only opened with certain private key. Example is that Alice sends a message to Bob which she has encrypted with Bob's public key. Bob opens it with using his own private key.
+
+2.6 Digital Signatures
+Ralph Merkle invented digital signature trees which is a basis nowadays. It's faster to sign documents with Public-Key Cryptography and One-Way Hash Functions. In practise Alice makes a one-way hash of a document. Then se encrypts the hash with her private key. Then the document is signed. Alice sends the document and the signed hash to Bob. Then Bob makes a one-way hash of the document that Alice sent. Next Bob is using the digital signature algorithm and decrypts the signed hash with Alice's public key. If the signed hash matches the hash he generated, the signature is valid. Using timestamps you can avoid cheating.
+
+2.7 Digital Signatures With Encryption
+When digital signatures are combined with public-key cryptography, we have the security of encryption and the authenticity of digital signatures. For security you should have two pairs of keys, one for signing and one for encrypting messages. Also timespams are needed.
+
+2.8 Random And Pseudo-Random-Sequence Generation
+"Pseudo-random sequence is one that looks random. The sequence's period should be long enough so that a finite sequence of reasonable length—that is, one that is actually used—is not periodic. For a sequence to be cryptographically secure pseudo-random, it must also be unpredictable. It must be computationally infeasible to predict what the next random bit will be, given complete knowledge of the algorithm or hardware generating the sequence and all of the previous bits in the stream. A sequence generator is real random if it has this additional third property: It cannot be reliably reproduced. If you run the sequence generator twice with the exact same input, you will get two completely unrelated random sequences. The output of a generator satisfying these three properties will be good enough for a one-time pad, key generation, and any other cryptographic applications that require a truly random sequence generator."
+
+Reference: Schneier, P. Applied Cryptography: Protocols, Algorithms and Source Code in C, 20th Anniversary Edition. 2015. Wiley. Readable: https://www.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/ Read: 2.11.2024
+
+## Summary of Rosenbaum 2019: Grokking Bitcoin Chapter 2. Cryptographic hash functions and digital signatures / Digital signatures
+Digital signature can be compared to real one. Typical use of digital signatures are that when you send other people some digital material, he or she can trust it's the original content by verifying it with senders public key. You can use a random number generator  to create a private key. That generator is available on almost all operating systems. Then you can transform the private key into a public key using a public-key derivation function. Public-key derivation is a one-way function, you can’t derive the private key from the public key. Keys are used to encrypt and decrypt data. When you see the little padlock in the address bar of your web browser, then you know that before mentioned are in use to secure your communication. With signature you can use hashes. Then you can authenticate it. Both parties need to use the exact same digital signature scheme. This must be agreed on beforehand, but it’s usually standardized. It's important to ensure that your own private key is in a safe place and no one else can access it. Otherwise you can be fraud. 
+
+a) Pubkey today. Explain how you have used public key cryptography today or yesterday, outside of this homework. In addition to naming the system, identify how different parties use keys in different steps of the system. (Answering this question likely requries finding sources on your own. This subtask does not require tests with a computer.)
+b) Messaging. Send an encrypted and signed message using PGP, then verify and decrypt it. (You can use folders to simulate users, or use two computers or two different OS users. Don't use Tero as a name of any party, unless that's your given name.)
+c) Other tool. Encrypt a message using a tool other than PGP. Explain how different parties use different keys at different stages of operation. Evaluate the security of the tool you've chosen.
+d) Eve and Mallory. In many crypto stories, Eve is a passive eavesdropper, listening on the wire. Mallory malliciously modifies the messages. Explain how PGP protects against Mallory and Eve. Be specific what features, which use of keys and which flags in the command are related to this protection. (This subtasks does not require tests with a computer)
+f) Password management. Demonstrate use of a password manager. What kind of attacks take advantage of people not using password managers? (You can use any password manager, some examples include pass and KeePassXC.)
+g) Refer to sources. Verify each homework report (this and the earlier ones) refers to sources. Every homework report should refer to this task page. It should also have references to any other source used, such as web pages, LLMs, man pages, other reports... References are mandatory, and must be present in every report. (This subtask does not need a report, you can just do it and write "Done." as the answer for this subtask.)
+
+Reference: Rosenbaum, K. Grokking Bitcoin. 2019. Manning Publications. New York. Readable: https://learning.oreilly.com/library/view/grokking-bitcoin/9781617294648/ Read: 2.11.2024
+
 # First homework Adversarial mindset
 Reference: https://terokarvinen.com/trust-to-blockchain/#homework
 
@@ -68,35 +98,6 @@ I tried to follow instructions but in real life it was different from instructio
 
 Reference: https://terokarvinen.com/2021/install-debian-on-virtualbox/
 
-# Second homework Pubkey 
-Reference: https://terokarvinen.com/trust-to-blockchain/#homework
-
-# Summary from  Schneier 2015: Applied Cryptography: Chapter 2 - Protocol Building Blocks
-2.5 Communications Using Public-Key Cryptography
-Whitfield and Hellman invented public-key cryptography in 1976. They used two different keys, the other one was public and the other private. The point is that you can encrypt a message with a public key but it can only opened with certain private key. Example is that Alice sends a message to Bob which she has encrypted with Bob's public key. Bob opens it with using his own private key.
-
-2.6 Digital Signatures
-Ralph Merkle invented digital signature trees which is a basis nowadays. It's faster to sign documents with Public-Key Cryptography and One-Way Hash Functions. In practise Alice makes a one-way hash of a document. Then se encrypts the hash with her private key. Then the document is signed. Alice sends the document and the signed hash to Bob. Then Bob makes a one-way hash of the document that Alice sent. Next Bob is using the digital signature algorithm and decrypts the signed hash with Alice's public key. If the signed hash matches the hash he generated, the signature is valid. Using timestamps you can avoid cheating.
-
-2.7 Digital Signatures With Encryption
-When digital signatures are combined with public-key cryptography, we have the security of encryption and the authenticity of digital signatures. For security you should have two pairs of keys, one for signing and one for encrypting messages. Also timespams are needed.
-
-2.8 Random And Pseudo-Random-Sequence Generation
-"Pseudo-random sequence is one that looks random. The sequence's period should be long enough so that a finite sequence of reasonable length—that is, one that is actually used—is not periodic. For a sequence to be cryptographically secure pseudo-random, it must also be unpredictable. It must be computationally infeasible to predict what the next random bit will be, given complete knowledge of the algorithm or hardware generating the sequence and all of the previous bits in the stream. A sequence generator is real random if it has this additional third property: It cannot be reliably reproduced. If you run the sequence generator twice with the exact same input, you will get two completely unrelated random sequences. The output of a generator satisfying these three properties will be good enough for a one-time pad, key generation, and any other cryptographic applications that require a truly random sequence generator."
-
-Reference: Schneier, P. Applied Cryptography: Protocols, Algorithms and Source Code in C, 20th Anniversary Edition. 2015. Wiley. Readable: https://www.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/ Read: 2.11.2024
-
-## Summary of Rosenbaum 2019: Grokking Bitcoin Chapter 2. Cryptographic hash functions and digital signatures / Digital signatures
-Digital signature can be compared to real one. Typical use of digital signatures are that when you send other people some digital material, he or she can trust it's the original content by verifying it with senders public key. You can use a random number generator  to create a private key. That generator is available on almost all operating systems. Then you can transform the private key into a public key using a public-key derivation function. Public-key derivation is a one-way function, you can’t derive the private key from the public key. Keys are used to encrypt and decrypt data. When you see the little padlock in the address bar of your web browser, then you know that before mentioned are in use to secure your communication. With signature you can use hashes. Then you can authenticate it. Both parties need to use the exact same digital signature scheme. This must be agreed on beforehand, but it’s usually standardized. It's important to ensure that your own private key is in a safe place and no one else can access it. Otherwise you can be fraud. 
-
-a) Pubkey today. Explain how you have used public key cryptography today or yesterday, outside of this homework. In addition to naming the system, identify how different parties use keys in different steps of the system. (Answering this question likely requries finding sources on your own. This subtask does not require tests with a computer.)
-b) Messaging. Send an encrypted and signed message using PGP, then verify and decrypt it. (You can use folders to simulate users, or use two computers or two different OS users. Don't use Tero as a name of any party, unless that's your given name.)
-c) Other tool. Encrypt a message using a tool other than PGP. Explain how different parties use different keys at different stages of operation. Evaluate the security of the tool you've chosen.
-d) Eve and Mallory. In many crypto stories, Eve is a passive eavesdropper, listening on the wire. Mallory malliciously modifies the messages. Explain how PGP protects against Mallory and Eve. Be specific what features, which use of keys and which flags in the command are related to this protection. (This subtasks does not require tests with a computer)
-f) Password management. Demonstrate use of a password manager. What kind of attacks take advantage of people not using password managers? (You can use any password manager, some examples include pass and KeePassXC.)
-g) Refer to sources. Verify each homework report (this and the earlier ones) refers to sources. Every homework report should refer to this task page. It should also have references to any other source used, such as web pages, LLMs, man pages, other reports... References are mandatory, and must be present in every report. (This subtask does not need a report, you can just do it and write "Done." as the answer for this subtask.)
-
-Reference: Rosenbaum, K. Grokking Bitcoin. 2019. Manning Publications. New York. Readable: https://learning.oreilly.com/library/view/grokking-bitcoin/9781617294648/ Read: 2.11.2024
 
 
 

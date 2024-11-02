@@ -87,7 +87,7 @@ When digital signatures are combined with public-key cryptography, we have the s
 Reference: Schneier, P. Applied Cryptography: Protocols, Algorithms and Source Code in C, 20th Anniversary Edition. 2015. Wiley. Readable: https://www.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/ Read: 2.11.2024
 
 ## Summary of Rosenbaum 2019: Grokking Bitcoin Chapter 2. Cryptographic hash functions and digital signatures / Digital signatures
-Digital signatures (8 sections, from "Typical use of digital signatures" to "Private key security")
+Digital signature can be compared to real one. Typical use of digital signatures are that when you send other people some digital material, he or she can trust it's the original content by verifying it with senders public key. You can use a random number generator  to create a private key. That generator is available on almost all operating systems. Then you can transform the private key into a public key using a public-key derivation function. Public-key derivation is a one-way function, you can’t derive the private key from the public key. Keys are used to encrypt and decrypt data. When you see the little padlock in the address bar of your web browser, then you know that before mentioned are in use to secure your communication. With signature you can use hashes. Then you can authenticate it. Both parties need to use the exact same digital signature scheme. This must be agreed on beforehand, but it’s usually standardized. 
 
 
 Reference: Rosenbaum, K. Grokking Bitcoin. 2019. Manning Publications. New York. Readable: https://learning.oreilly.com/library/view/grokking-bitcoin/9781617294648/ Read: 2.11.2024

@@ -22,14 +22,51 @@ Reference: Schneier, P. Applied Cryptography: Protocols, Algorithms and Source C
 ## Summary of Rosenbaum 2019: Grokking Bitcoin Chapter 2. Cryptographic hash functions and digital signatures / Digital signatures
 Digital signature can be compared to real one. Typical use of digital signatures are that when you send other people some digital material, he or she can trust it's the original content by verifying it with senders public key. You can use a random number generator  to create a private key. That generator is available on almost all operating systems. Then you can transform the private key into a public key using a public-key derivation function. Public-key derivation is a one-way function, you can’t derive the private key from the public key. Keys are used to encrypt and decrypt data. When you see the little padlock in the address bar of your web browser, then you know that before mentioned are in use to secure your communication. With signature you can use hashes. Then you can authenticate it. Both parties need to use the exact same digital signature scheme. This must be agreed on beforehand, but it’s usually standardized. It's important to ensure that your own private key is in a safe place and no one else can access it. Otherwise you can be fraud. 
 
-a) Pubkey today. Explain how you have used public key cryptography today or yesterday, outside of this homework. In addition to naming the system, identify how different parties use keys in different steps of the system. (Answering this question likely requries finding sources on your own. This subtask does not require tests with a computer.)
-b) Messaging. Send an encrypted and signed message using PGP, then verify and decrypt it. (You can use folders to simulate users, or use two computers or two different OS users. Don't use Tero as a name of any party, unless that's your given name.)
-c) Other tool. Encrypt a message using a tool other than PGP. Explain how different parties use different keys at different stages of operation. Evaluate the security of the tool you've chosen.
-d) Eve and Mallory. In many crypto stories, Eve is a passive eavesdropper, listening on the wire. Mallory malliciously modifies the messages. Explain how PGP protects against Mallory and Eve. Be specific what features, which use of keys and which flags in the command are related to this protection. (This subtasks does not require tests with a computer)
-f) Password management. Demonstrate use of a password manager. What kind of attacks take advantage of people not using password managers? (You can use any password manager, some examples include pass and KeePassXC.)
-g) Refer to sources. Verify each homework report (this and the earlier ones) refers to sources. Every homework report should refer to this task page. It should also have references to any other source used, such as web pages, LLMs, man pages, other reports... References are mandatory, and must be present in every report. (This subtask does not need a report, you can just do it and write "Done." as the answer for this subtask.)
-
 Reference: Rosenbaum, K. Grokking Bitcoin. 2019. Manning Publications. New York. Readable: https://learning.oreilly.com/library/view/grokking-bitcoin/9781617294648/ Read: 2.11.2024
+
+## Other subtasks from lesson 2
+a) Pubkey today. 
+Today I have used public key cryptography when I used mobile banking services, email and also with WhatsApp messages and when I sign into some apps on my mobilephone and it uses mobilephones password management. 
+
+Banking services: Couln't find relevant information from Nordea website. When I go into app it takes facial recognition. 
+
+Email: There are several steps in email services that provide security. "SPF uses a TXT record in DNS to identify valid sources of mail from the MAIL FROM domain, and what to do if the destination email server receives mail from an undefined source. DKIM uses a domain to digitally sign important elements of the message (including the From address) and stores the signature in the message header. The destination server verifies that the signed elements of the message weren't altered. DMARC uses SPF and DKIM to check for alignment between the domains in the MAIL FROM and From addresses. DMARC also specifies the action that the destination email system should take on messages that fail DMARC, and identifies where to send DMARC results (both pass and fail)."
+Reference: https://learn.microsoft.com/en-us/defender-office-365/email-authentication-about
+
+WhatsApp: Your conversation are private. Full encryption retains personal messages between you and people you have chosen. Even WhatsApp can't read those. Couln't find more detailed information from WhatsAPP guides.
+Reference: Information in WhatsApp
+
+Password management: "A passkey eliminates the need for a password by using a unique digital key that only works from the site or app it was created for, so you don’t have to worry about website leaks or phishing. Passkeys are securely synced across Apple devices. Just use Touch ID or Face ID to authenticate and you’re done."
+Reference: https://www.apple.com/privacy/
+
+b) Messaging. Send an encrypted and signed message using PGP, then verify and decrypt it. (You can use folders to simulate users, or use two computers or two different OS users. Don't use Tero as a name of any party, unless that's your given name.)
+Reference: https://terokarvinen.com/2023/pgp-encrypt-sign-verify/
+
+c) Other tool. Encrypt a message using a tool other than PGP. Explain how different parties use different keys at different stages of operation. Evaluate the security of the tool you've chosen.
+
+d) Eve and Mallory.
+Encryption prevents anyone from reading your message. Signing protects your message from modification. Public keys allow you to establish trust without meeting physically.
+Protection against Eve: Generating keypairs for both Alice and me. Alice want's to send me a message. For this, she needs my public key. I'll export it. Parameters to export are
+--export Export my public key
+--armor Only use ASCII characters, so that the output can be viewed and copy -asted.
+--output tero.pub Save the output into the file "tero.pub"
+Alice can check the fingerprint to verify that this is indeed Tero's key. This step is needed if Tero's public key was obtained over insecure channel, like unencrypted email, a web page or a key server. Alice signs Tero's key to mark it as trusted. Now that Alice has Tero's key, she can encrypt messages to Tero.
+
+Protection against Mallory: Alice needs Tero's public key to encrypt. Tero needs Alice's public key to verify Alice's singature. And vice versa. Alice wants to sign her messages. Tero needs Alice's key to know that it's really her. The process for exporting, importing, verifying and trusting the key is the same as before. Only the roles have been swapped. The initial steps of establishing trust are completed. Tero and Alice have exchanged keys, and verified that they have the correct keys. 
+The parts of the command are: 
+--encrypt Encrypt the message
+--recipient tero@example.com.invalid To key identified by email address.
+-sign Sign the message using Alice's secret key. 
+--armor Use normal, printable ASCII characters for the message. This way, we can copy-paste it, and it does not break if we send it in email body. It uses base64 to show binary data using normal letters.
+--output encrypted.pgp Save the encrypted message to this file
+message.txt The plain text file we wish to encrypt
+The encrypted message starts with "BEGIN PGP MESSAGE" and ends with "END PGP MESSAGE". The 20+ lines of gibberish in between is Alice's secret message, encrypted, signed and ASCII armored.
+The message was decrypted with Tero's secret key. Now Tero can read the message: "Hi Tero, This is my secret...". Alice's signature was verified using Alice's public key. Now Tero knows it's really her.
+
+f) Password management. Demonstrate use of a password manager. What kind of attacks take advantage of people not using password managers? (You can use any password manager, some examples include pass and KeePassXC.)
+
+g) Refer to sources. 
+Done. 
 
 # First homework Adversarial mindset
 Reference: https://terokarvinen.com/trust-to-blockchain/#homework

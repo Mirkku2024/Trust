@@ -40,6 +40,7 @@ Password management: "A passkey eliminates the need for a password by using a un
 Reference: https://www.apple.com/privacy/
 
 b) Messaging. Send an encrypted and signed message using PGP, then verify and decrypt it. (You can use folders to simulate users, or use two computers or two different OS users. Don't use Tero as a name of any party, unless that's your given name.)
+Unfortunately I could't do this since the Linux Debian virtual machine doesn't work on my computer and didn't find a way to do this with windows in my normal computer. 
 Reference: https://terokarvinen.com/2023/pgp-encrypt-sign-verify/
 
 c) Other tool. Encrypt a message using a tool other than PGP. Explain how different parties use different keys at different stages of operation. Evaluate the security of the tool you've chosen.

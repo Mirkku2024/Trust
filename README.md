@@ -45,6 +45,34 @@ Reference: https://terokarvinen.com/2023/pgp-encrypt-sign-verify/
 
 c) Other tool. Encrypt a message using a tool other than PGP. Explain how different parties use different keys at different stages of operation. Evaluate the security of the tool you've chosen. 
 
+I'll try to encrypt an Outlook message. Microsoft advices this: 
+
+![image](https://github.com/user-attachments/assets/b32b30cb-7d96-41ba-bf85-520f190092a8)
+
+Reference: https://support.microsoft.com/en-us/office/send-encrypted-email-messages-in-outlook-for-windows-373339cb-bf1a-4509-b296-802a39d801dc
+
+![image](https://github.com/user-attachments/assets/eecf4b0e-1f4b-40d1-b17f-b6ab81f8d280)
+
+![image](https://github.com/user-attachments/assets/3bf9edb0-acf8-4759-8627-655f3f81697b)
+
+When pushing send: 
+![image](https://github.com/user-attachments/assets/7e964718-7d2e-4071-b614-3c8d2782ebf4)
+
+When choosing "Hae digitaalinen tunnus" it opens Microsoft support pages. 
+When I choose "Ok", then it gives me erros message.
+
+![image](https://github.com/user-attachments/assets/60a4daae-d544-48e1-aa18-29572c65fb46)
+
+Basically what should happen is that I encrypt my message and give the email receiving person my public key. With that key the email receiver can open my message. The security of encrypting mail in Outlook seems decent. It uses 
+
+
+
+
+![image](https://github.com/user-attachments/assets/a8be0595-a0c0-4c60-a36f-0e77cca00f8f)
+
+
+
+
 d) Eve and Mallory.
 Encryption prevents anyone from reading your message. Signing protects your message from modification. Public keys allow you to establish trust without meeting physically.
 Protection against Eve: Generating keypairs for both Alice and me. Alice want's to send me a message. For this, she needs my public key. I'll export it. Parameters to export are

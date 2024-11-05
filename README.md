@@ -51,6 +51,8 @@ I'll try to encrypt an Outlook message. Microsoft advices this:
 
 Reference: https://support.microsoft.com/en-us/office/send-encrypted-email-messages-in-outlook-for-windows-373339cb-bf1a-4509-b296-802a39d801dc
 
+![image](https://github.com/user-attachments/assets/a8be0595-a0c0-4c60-a36f-0e77cca00f8f)
+
 ![image](https://github.com/user-attachments/assets/eecf4b0e-1f4b-40d1-b17f-b6ab81f8d280)
 
 ![image](https://github.com/user-attachments/assets/3bf9edb0-acf8-4759-8627-655f3f81697b)
@@ -63,15 +65,7 @@ When I choose "Ok", then it gives me erros message.
 
 ![image](https://github.com/user-attachments/assets/60a4daae-d544-48e1-aa18-29572c65fb46)
 
-Basically what should happen is that I encrypt my message and give the email receiving person my public key. With that key the email receiver can open my message. The security of encrypting mail in Outlook seems decent. It uses 
-
-
-
-
-![image](https://github.com/user-attachments/assets/a8be0595-a0c0-4c60-a36f-0e77cca00f8f)
-
-
-
+Basically what should happen is that I encrypt my message and give the email receiving person my public key. With that key the email receiver can open my message. The security of encrypting mail in Outlook seems decent. You need to have certificate for your computer so that you can encrypt message. 
 
 d) Eve and Mallory.
 Encryption prevents anyone from reading your message. Signing protects your message from modification. Public keys allow you to establish trust without meeting physically.

@@ -136,6 +136,16 @@ I tried to follow instructions but in real life it was different from instructio
 
 Reference: https://terokarvinen.com/2021/install-debian-on-virtualbox/
 
+Try number 3 on 5.11.2024
+
+![image](https://github.com/user-attachments/assets/5dad6970-90e3-499a-aab8-e419287a6a05)
+
+![image](https://github.com/user-attachments/assets/0ae2b5b6-0fa6-4000-8eac-7430b3210414)
+
+
+
+
+
 
 
 

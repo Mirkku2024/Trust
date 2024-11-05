@@ -142,6 +142,48 @@ Try number 3 on 5.11.2024
 
 ![image](https://github.com/user-attachments/assets/0ae2b5b6-0fa6-4000-8eac-7430b3210414)
 
+![image](https://github.com/user-attachments/assets/f31233d3-75de-476e-bd27-bb23468b0bfd)
+
+![image](https://github.com/user-attachments/assets/21b0c780-9f16-499c-8333-e4b29481cb52)
+
+No expert install was available. 
+![image](https://github.com/user-attachments/assets/5f663296-1673-479c-a7d1-aa4dd4e513cc)
+
+![image](https://github.com/user-attachments/assets/0dbc5d17-a163-4b66-b64e-32a0a0557eb9)
+
+![image](https://github.com/user-attachments/assets/3a8ed31a-a1ce-43ae-b6b2-11675c1e921a)
+
+![image](https://github.com/user-attachments/assets/61b0cf96-6545-4f2e-b1ad-b1573f0903a4)
+
+At this point it didn't let me to finish installing
+
+Tried again and find expert mode and now
+
+![image](https://github.com/user-attachments/assets/d472a1b5-47ab-4375-9b4c-824da0637985)
+
+![image](https://github.com/user-attachments/assets/b6e9bf11-d83f-4f85-8bc9-58a82cefdbcd)
+
+![image](https://github.com/user-attachments/assets/1051eebf-6797-4696-b18a-1c9b70c34465)
+
+![image](https://github.com/user-attachments/assets/e4ecd8e0-3047-4e51-bc63-96174b5da42a)
+
+![image](https://github.com/user-attachments/assets/bed7fe32-a8fa-4756-ac39-ac97c7b65a83)
+
+Then I tried to reset the machine
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

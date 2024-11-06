@@ -25,6 +25,7 @@ Digital signature can be compared to real one. Typical use of digital signatures
 Reference: Rosenbaum, K. Grokking Bitcoin. 2019. Manning Publications. New York. Readable: https://learning.oreilly.com/library/view/grokking-bitcoin/9781617294648/ Read: 2.11.2024
 
 ## Other subtasks from lesson 2
+
 a) Pubkey today. 
 Today I have used public key cryptography when I used mobile banking services, email and also with WhatsApp messages and when I sign into some apps on my mobilephone and it uses mobilephones password management. 
 
@@ -40,6 +41,7 @@ Password management: "A passkey eliminates the need for a password by using a un
 Reference: https://www.apple.com/privacy/
 
 b) Messaging. Send an encrypted and signed message using PGP, then verify and decrypt it. (You can use folders to simulate users, or use two computers or two different OS users. Don't use Tero as a name of any party, unless that's your given name.)
+
 Unfortunately I could't do this since the Linux Debian virtual machine doesn't work on my computer. I progressed with this when using another computer but Debian doesn't accept my password. I reseted Debian and made it again but still same problems occure and trying to google solutions didn't help. 
 Reference: https://terokarvinen.com/2023/pgp-encrypt-sign-verify/
 
@@ -68,6 +70,7 @@ When I choose "Ok", then it gives me erros message.
 Basically what should happen is that I encrypt my message and give the email receiving person my public key. With that key the email receiver can open my message. The security of encrypting mail in Outlook seems decent. You need to have certificate for your computer so that you can encrypt message. 
 
 d) Eve and Mallory.
+
 Encryption prevents anyone from reading your message. Signing protects your message from modification. Public keys allow you to establish trust without meeting physically.
 Protection against Eve: Generating keypairs for both Alice and me. Alice want's to send me a message. For this, she needs my public key. I'll export it. Parameters to export are
 --export Export my public key
@@ -87,6 +90,10 @@ The encrypted message starts with "BEGIN PGP MESSAGE" and ends with "END PGP MES
 The message was decrypted with Tero's secret key. Now Tero can read the message: "Hi Tero, This is my secret...". Alice's signature was verified using Alice's public key. Now Tero knows it's really her.
 
 f) Password management. Demonstrate use of a password manager. What kind of attacks take advantage of people not using password managers? (You can use any password manager, some examples include pass and KeePassXC.)
+
+I tried to use KeePassXC but I was not succesful with that. From my mobilephone (iphone) this is familiar. When you are creating account to a new application, iPhone suggests to generate a password and it storages it also. When you use the app, it takes the storaged password and you don't need to refill it. 
+
+When you are not using password manager, there are several vulnerabilities. Hackers try to guess your password and it can be quite easy althoug you use long password with different kind of characters and numbers. There are lots of people who are using same password in many applications and also it can be easily found out. If hackers know your account name which typically is your email address it's much easier to get access with your codes. They solve your password one character at a time and in the end they get the access. Also hackers can try to phish your identity to application which is commonly used when trying to get banking codes. Hackers can also send you somekind of trustworthy looking email with a link. When using that link, you give your codes when trying to access "the service". Then hackers get your codes with this fake website.
 
 g) Refer to sources. 
 Done. 

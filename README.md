@@ -36,7 +36,9 @@ a) Billion dollar busywork. Command 'echo -n "hello"|sha256sum' prints a hash. T
 After 23 tries still no luck with a zero in the start. Tried to google help but no luck.
 
 b) Compare hash. Create a small text file. Take it's hash (e.g. 'sha256sum tero.txt'). Change one letter. Take the hash again. Compare hashes. What do you notice?
+
 ![image](https://github.com/user-attachments/assets/7975da4b-25ac-434e-8138-23b779b71eca)
+
 So I changed the file so that I took one letter of it and nothing changed in hashes. I wasn't sure if I should have changed the files subtitle or something in the command promt so I did only the change inside the file.
 
 c) Hashcat. Install hashcat and test that it works.

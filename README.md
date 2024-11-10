@@ -1,6 +1,49 @@
 # Trust
 Homework reports for security course taught by Tero Karvinen
 
+# Third homework Hash
+Reference: https://terokarvinen.com/trust-to-blockchain/#homework
+
+# Summary from Schneier 2015: Applied Cryptography: Chapter 2 - Protocol Building Blocks: subchapters 2.3 and 2.4
+2.3 One-way Fuctions
+One-way function is basic element to public-key cryptography. Those are easy to make but very difficult if not impossible to reverse. You can't use only one-way function to message encrypting because no one could decrypt it. 
+
+2.4 One-Way Hash Functions
+- A one-way hash function is an essential part of modern cryptography.
+- A hash function is a function that uses input string (called a pre-image) whatever length and converts it to a fixed-length which is usually smaller output string. That is a hash value. It is a fingerprint of pre-image and proves it's the correct pre-image.
+- When using a one-way hash function you can't generate same hashes for different pre-images. So it doesn't collide with anything.
+- The hash-function is public.
+- If two parties has the same file, they can confirm it's the same because they have same hashes of the file.
+- A message authentication code (MAC) is a one-way hash function but it has also a secret key. The hash value is a function of both the pre-image and the key. Someone with the key can verify the hash value.
+
+Reference: Schneier, P. Applied Cryptography: Protocols, Algorithms and Source Code in C, 20th Anniversary Edition. 2015. Wiley. Readable: https://www.oreilly.com/library/view/applied-cryptography-protocols/9781119096726/ Read: 10.11.2024
+
+# Summary from Karvinen 2022: Cracking Passwords with Hashcat
+- Systems don't store original passwords, they store hashes. Hashing is a one way function, so you can't turn it back to password. With Hashcat you can try to guess password.
+- When you are making penetration testing be sure to do it according to law. Take note also an ethical point of view.
+- Install Hashcat and use a big dictionary in cracking passwords.
+- Identify hash type
+- Crack the hash
+- Hashcat reports it as solved when you have made the cracking correctly like in example case of this assignment.
+
+Reference: https://terokarvinen.com/2022/cracking-passwords-with-hashcat/
+
+## Other subtasks from lesson 3
+
+a) Billion dollar busywork. Command 'echo -n "hello"|sha256sum' prints a hash. Try adding something to the string, e.g. 'echo -n 'hello asdf'|sha256sum'. What do you have to add to get a hash that starts with a zero? 
+
+b) Compare hash. Create a small text file. Take it's hash (e.g. 'sha256sum tero.txt'). Change one letter. Take the hash again. Compare hashes. What do you notice?
+
+c) Hashcat. Install hashcat and test that it works.
+
+d) Dictionary attack. Crack this hash: 21232f297a57a5a743894a0e4a801fc3
+
+e) How can you make a password that's protected against a dictionary attack?
+
+j) John. Install Jumbo John (John the Ripper, open source Jumbo version). Compile it from source code as needed. See Karvinen 2023 Crack File Password With John.
+
+k) Crack file password with John.
+
 # Second homework Pubkey 
 Reference: https://terokarvinen.com/trust-to-blockchain/#homework
 

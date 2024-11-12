@@ -52,14 +52,23 @@ I cracked it.
 Reference: https://terokarvinen.com/2022/cracking-passwords-with-hashcat/
 
 d) Dictionary attack. Crack this hash: 21232f297a57a5a743894a0e4a801fc3
+Well the hashcat assignment I did on sunday but on tuesday it apparently doesn't work anymore. I don't know hat should I do, in linux I found hashcat on program files.
+![image](https://github.com/user-attachments/assets/f4d232ac-f491-4803-b4b6-7f0f35dd30e6)
+
 
 e) How can you make a password that's protected against a dictionary attack?
-
+Generate a password and store it with some password manager to keyvault.
 
 j) John. Install Jumbo John (John the Ripper, open source Jumbo version). Compile it from source code as needed. See Karvinen 2023 Crack File Password With John.
+Ei tainnut onnistua asennus
+![image](https://github.com/user-attachments/assets/7907c089-6c4b-4144-b279-4a11d2b8c6f6)
+Olisin kokeillut jatkoa, mutta jostain syystä näppäimistöni ei anna erikoismerkkejä normaaleilla tavoilla, vaikka asennusvaiheessa valitsin näppäimistön kielen ohjeen mukaan. Tällä kertaa en saa muodostettua ohjeen mukaista komentoa, sillä en saa millään näppänyhdistelmällä yhtäsuuri merkkiä = eikä anna kopioida muista lähteistä mitään Linux komentoihin 
+$ git clone --depth=1 https://github.com/openwall/john.git
+
+Reference: https://terokarvinen.com/2023/crack-file-password-with-john/
 
 k) Crack file password with John.
-
+Ks. edellinen
 
 
 # Second homework Pubkey 

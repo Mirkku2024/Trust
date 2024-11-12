@@ -55,6 +55,7 @@ d) Dictionary attack. Crack this hash: 21232f297a57a5a743894a0e4a801fc3
 
 e) How can you make a password that's protected against a dictionary attack?
 
+
 j) John. Install Jumbo John (John the Ripper, open source Jumbo version). Compile it from source code as needed. See Karvinen 2023 Crack File Password With John.
 
 k) Crack file password with John.

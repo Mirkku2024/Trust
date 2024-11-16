@@ -64,7 +64,11 @@ I checked Bitcoin block number 870 404 which was mined on 16.11. 4.23 AM. There 
 
 ![image](https://github.com/user-attachments/assets/1a35160b-6dda-468c-a55e-d2098a9f66bd)
 
+Inside Bitcoin block are lots of details. The most important facts are hash (this started with 5 zeros), nonce, amount of transactions, mined on and miner.
+
 ![image](https://github.com/user-attachments/assets/46708503-9150-428a-ac58-185d994abeef)
+
+In transaction you can see who is sending (public key) and to whom it's sending (public key)
 
 ![image](https://github.com/user-attachments/assets/b1f22fbc-5abe-4760-be77-ee1738e6634a)
 

@@ -52,11 +52,17 @@ d) Recycle. Move the testnet money back to the same faucet you got it from.
 Couldn't do this because I don't understand what to do.
 
 e) Explorer. Use a block explorer to analyze a block on the real Bitcoin blockchain. Explain what each value and field means. You only need to analyze the block information and one sample transaction, as a block can contain many transactions.
+
 ![image](https://github.com/user-attachments/assets/5fda4b07-17d1-49b5-ab8d-5675be72f23e)
+
 ![image](https://github.com/user-attachments/assets/1a35160b-6dda-468c-a55e-d2098a9f66bd)
+
 ![image](https://github.com/user-attachments/assets/46708503-9150-428a-ac58-185d994abeef)
+
 ![image](https://github.com/user-attachments/assets/b1f22fbc-5abe-4760-be77-ee1738e6634a)
+
 ![image](https://github.com/user-attachments/assets/f62a050a-6ebd-4d7f-8dec-f4aa0ce270af)
+
 ![image](https://github.com/user-attachments/assets/31ed63d0-9371-439c-a177-cf530d8219fc)
 
 

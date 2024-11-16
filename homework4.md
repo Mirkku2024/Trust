@@ -38,11 +38,17 @@ Wallet created
 
 b) Faucet. Get worthless fake money from a testnet Bitcoin faucet.
 First and second try didn't get me in. 
+
 ![image](https://github.com/user-attachments/assets/4a03cba9-dc4d-4631-8cf0-2593d6a2252c)
+
 I opened another test faucet but I had no idea what to do. 
+
 ![image](https://github.com/user-attachments/assets/49e29068-4bec-4488-9aff-f97329c6d64e)
+
 ![image](https://github.com/user-attachments/assets/c08a5cee-126e-4d8a-bf56-643b2c3d1a70)
+
 I tried to use an receiving address from Electrum but got an notification. At this point I stopped trying.
+
 ![image](https://github.com/user-attachments/assets/0f55ac35-d95d-4002-a1e7-6a2ad69fd0d0)
 
 c) Giveway. Move money to another Bitcoin wallet. Choose an amount where the last two digists are 73.

@@ -60,6 +60,7 @@ Couldn't do this because I don't understand what to do.
 e) Explorer. Use a block explorer to analyze a block on the real Bitcoin blockchain. Explain what each value and field means. You only need to analyze the block information and one sample transaction, as a block can contain many transactions.
 
 ![image](https://github.com/user-attachments/assets/5fda4b07-17d1-49b5-ab8d-5675be72f23e)
+I checked Bitcoin block number 870 404 which was mined on 16.11. 4.23 AM. There were send 1489,83 BTC (Bitcoin cash?) and in money it was 135 891 971 dollars. 
 
 ![image](https://github.com/user-attachments/assets/1a35160b-6dda-468c-a55e-d2098a9f66bd)
 
@@ -83,27 +84,24 @@ Argument 1 Cryptocurrency is easier to lose than real money
 - It's value can be gone if it gets negative publicity
 
 Argument 2 Cryptocurrency is far more volatile
-+/- Cryptocurrency is dezentralized Reference: https://www.investopedia.com/terms/c/cryptocurrency.asp
-- 
++ Cryptocurrency is dezentralized Reference: https://www.investopedia.com/terms/c/cryptocurrency.asp
+- Cryptocurrency is too dezentralized
 
 Argument 3 Cryptocurrency slaughters the environment
 - Uses more electricity than Switzerland Reference: https://unu.edu/press-release/un-study-reveals-hidden-environmental-impacts-bitcoin-carbon-not-only-harmful-product
-- Cryptocurrency mining will raise your costs hugely
-- 
+- Cryptocurrency mining will raise your costs hugely (electricity bills)
+
 Argument 4 Cryptocurrency can't be exchanged for vast majority of goods and services
 + Fungibility
 - You can exchange it for criminal stuff
   
 Argument 5 Cryptocurrency will make you look sexy in the age of consent laws.
-+
 - Cryptocurrency has been used for money laundering Reference: https://baselgovernance.org/publications/quick-guide-1-cryptocurrencies-and-money-laundering-investigations
-- 
+
 Argument 6 If you don't know about blockchain you can lose a large amount of real money.
-+ 
 - What happens if you forgot your electronic wallets password? Reference: https://www.investopedia.com/biggest-mistakes-crypto-investors-make-8712112
   
 Argument 7 Cryptocurrency will remain it's value as long as Cryptofirms keep talkin' about it and internet is up and running
-+
 - You just invest more and more but it loses value
   
 Argument 8 Almost 90 % of cryptocurrencies are already mined 

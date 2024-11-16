@@ -24,15 +24,41 @@ The first transaction in a block is a special transaction that starts a new coin
 
 Reference: Nakamoto 2008: Bitcoin: A Peer-to-Peer Electronic Cash System (A colored HTML version) Readable: https://bitcoin.org/bitcoin.pdf Read: 15.11.2024
 
+# Other subtasks
+
 a) Wallet. Create a BitCoin testnet wallet. (For example, electrum)
+Electrum installed.
+![image](https://github.com/user-attachments/assets/58d51fee-e6ab-4e53-a448-9a1883de129d)
+![image](https://github.com/user-attachments/assets/d810a34a-14ab-4adb-a188-8a1264e3a9d1)
+![image](https://github.com/user-attachments/assets/56f1c4e8-706b-4af9-a978-ab93cfd26e3b)
+![image](https://github.com/user-attachments/assets/2b651a73-892b-4f84-be44-74bc99d616c0)
+![image](https://github.com/user-attachments/assets/7a8870ab-05ab-49e3-8eb7-50dc2949f61e)
+Wallet created
+![image](https://github.com/user-attachments/assets/b6a46de8-4116-470d-bdbf-d805dce7ec1d)
 
 b) Faucet. Get worthless fake money from a testnet Bitcoin faucet.
+First and second try didn't get me in. 
+![image](https://github.com/user-attachments/assets/4a03cba9-dc4d-4631-8cf0-2593d6a2252c)
+I opened another test faucet but I had no idea what to do. 
+![image](https://github.com/user-attachments/assets/49e29068-4bec-4488-9aff-f97329c6d64e)
+![image](https://github.com/user-attachments/assets/c08a5cee-126e-4d8a-bf56-643b2c3d1a70)
+I tried to use an receiving address from Electrum but got an notification. At this point I stopped trying.
+![image](https://github.com/user-attachments/assets/0f55ac35-d95d-4002-a1e7-6a2ad69fd0d0)
 
 c) Giveway. Move money to another Bitcoin wallet. Choose an amount where the last two digists are 73.
+Couldn't do this because I don't understand what to do.
 
 d) Recycle. Move the testnet money back to the same faucet you got it from.
+Couldn't do this because I don't understand what to do.
 
 e) Explorer. Use a block explorer to analyze a block on the real Bitcoin blockchain. Explain what each value and field means. You only need to analyze the block information and one sample transaction, as a block can contain many transactions.
+![image](https://github.com/user-attachments/assets/5fda4b07-17d1-49b5-ab8d-5675be72f23e)
+![image](https://github.com/user-attachments/assets/1a35160b-6dda-468c-a55e-d2098a9f66bd)
+![image](https://github.com/user-attachments/assets/46708503-9150-428a-ac58-185d994abeef)
+![image](https://github.com/user-attachments/assets/b1f22fbc-5abe-4760-be77-ee1738e6634a)
+![image](https://github.com/user-attachments/assets/f62a050a-6ebd-4d7f-8dec-f4aa0ce270af)
+![image](https://github.com/user-attachments/assets/31ed63d0-9371-439c-a177-cf530d8219fc)
+
 
 f) RogeCoin. Critically comment on Honest Ads: If Cryptocurrency Was Honest 
 Identify and list arguments made. Provide commentary to support and challenge each of the claims. If you can, provide references or real life examples to your claims. 

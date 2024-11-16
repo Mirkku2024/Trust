@@ -41,7 +41,7 @@ First and second try didn't get me in.
 
 ![image](https://github.com/user-attachments/assets/4a03cba9-dc4d-4631-8cf0-2593d6a2252c)
 
-I opened another test faucet but I had no idea what to do. 
+I opened another test faucet.
 
 ![image](https://github.com/user-attachments/assets/49e29068-4bec-4488-9aff-f97329c6d64e)
 

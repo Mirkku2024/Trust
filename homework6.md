@@ -17,13 +17,16 @@ Threat-model: The goal is not to prevent traffic confirmation attacks. We aim to
 Reference: Karunanayake, Ahmed, Malaney, Islam and Jha 2021: De-anonymisation attacks on tor: A survey. In IEEE Communications Surveys & Tutorials (jufo level 2). 
 
 Summary of Abstract
+
 People are trying to protect their online privacy and it grows popularity of anonymity networks. Tor is most popular network and it protects privacy of the user and services. Also criminals take advantage of anonymity. In this survey has been analyzed known Tor attacks and techniques against anonymisation of users. Survey provides some improvements to Tor network to protect the privacy of the users. 
 
 Summary of I Introduction
+
 Main use of low latency anonymous networks is to provide online privacy security for different kinds of use: private persons in totalitary countries, whistle blowers, military and business organizations with sensitive communications. The most popular service Tor provides anonymity to users and supports the deployment of anonymous services, known as hidden services. But also criminals has taken Tor into use and that's why governments also want to break it's anonymosity. This survey covers about 30 more de-anonymisation attacks than most past surveys. There has been used multi-level taxonomy to categorise de-anonymisation attacks on Tor. In this surveys has been classified and discussed each attack, focusing on the Tor circuit component(s) used and the method of execution. The practicality of those attacks has been analyzed. Finally survey highlights several significant Tor development milestones over the years that are relevant to deanonymisation attacks and discuss how security improvements
 have made some of the previously possible attacks unfeasible.
 
 Summary of II Background (to the end of "B. Circuit Establishent for Tor HS")
+
 Tor uses onion routing. Tor is an overlay network based on Transmission Control Protocol (TCP) that builds circuits from a user to the destination server, which generally consists of three voluntary relays. 
 Tor client is an onion proxy (OP). This needs to be installed into users device.
 Directory Servers are a small set of trusted and known servers in the network that actively keep details about the status of the complete network. 
@@ -36,10 +39,12 @@ Rendezvous Point (RP) is a random Tor node selected by the client OP before the 
 Bridges are normal Tor relays that are not listed publicly in the main Tor directory. They replace guard nodes in the circuit.
 
 Standard Tor Circuit Establishment
+
 Before communicating over the Tor network, a Tor client must establish a circuit through the Tor network. The user is required to have the Onion Proxy (OP) installed on the
 device being used for browsing. The OP first contacts a DS and requests a list of active relays in the network. Then it selects three relays from the list to act as the entry, middle, and exit nodes, and incrementally creates a circuit by exchanging encryption keys with each node. The key exchange is done via the Diffie–Hellman handshake. Once this connection consisting of three hops has been established, the user can communicate with the intended destination server over the established circuit.
 
 Circuit Establishment for Tor HS
+
 The HS selects multiple introduction points from the available nodes in the Tor network and builds connections to those nodes. Following this, it connects to the DS and advertises a service descriptor with the HS’s public key, expiration time, and the details of the selected introduction points. The HS owner can then advertise the service’s onion address. If users want to access a HS, they need to find its onion address. When the user searches an address in the browser, the OP fetches the service descriptor of that particular HS from the DS. This way, the OP finds out about the HS’s introduction points and its public key. The OP then selects an RP, establishes a Tor circuit to the RP (via two nodes (entry and middle)), and sends a message with the RP’s address, and a one-time secret called the Rendezvous Cookie (RC) to one of the introduction points. The introduction point forwards this message, which is encrypted with the HS’s public key, to the HS. Once the HS receives the message, if it wants to establish a connection with that client, it (HS) selects three Tor nodes (one entry and two middle) and creates a three-hop connection to the RP, which keeps the HS’s identity anonymous from RP. Following this, the client and the HS can communicate using the six-hop circuit via the RP.
 
 Summary of Fig. 6. Taxonomy for Tor attacks (Just the figure on page 2330.)

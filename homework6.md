@@ -31,7 +31,7 @@ Tor uses onion routing. Tor is an overlay network based on Transmission Control 
 Tor client is an onion proxy (OP). This needs to be installed into users device.
 Directory Servers are a small set of trusted and known servers in the network that actively keep details about the status of the complete network. 
 Entry Node/Guard is the relay in the Tor network that the client directly connects to. 
-Exit Node is the final point it the circuit. Therefore, it knows the IP address of the destination server accessed via the Tor network. This is the last layer of encryption provided by the Tor network. 
+Exit Node is the final point it the circuit. Therefore, it knows the IP address of the destination server accessed via the Tor network. This is the last layer of encryption provided by the Tor network. 
 The Tor network supports Hidden Services (HS), also known as Onion Services because Tor gives anonymity to user but not to services they use. HS can be hosted on a
 node inside the Tor network or an external node and these domains ends in .onion.
 Introduction Points are random nodes selected by the HS to register its services with the Tor network. The HS then advertises these selected introduction points and its public key in the Hidden Service Directories (HSDirs).

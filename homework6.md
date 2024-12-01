@@ -25,7 +25,7 @@ Summary of I Introduction
 Main use of low latency anonymous networks is to provide online privacy security for different kinds of use: private persons in totalitary countries, whistle blowers, military and business organizations with sensitive communications. The most popular service Tor provides anonymity to users and supports the deployment of anonymous services, known as hidden services. But also criminals has taken Tor into use and that's why governments also want to break it's anonymosity. This survey covers about 30 more de-anonymisation attacks than most past surveys. There has been used multi-level taxonomy to categorise de-anonymisation attacks on Tor. In this surveys has been classified and discussed each attack, focusing on the Tor circuit component(s) used and the method of execution. The practicality of those attacks has been analyzed. Finally survey highlights several significant Tor development milestones over the years that are relevant to deanonymisation attacks and discuss how security improvements
 have made some of the previously possible attacks unfeasible.
 
-Summary of II Background (to the end of "B. Circuit Establishent for Tor HS")
+Summary of II Background 
 
 Tor uses onion routing. Tor is an overlay network based on Transmission Control Protocol (TCP) that builds circuits from a user to the destination server, which generally consists of three voluntary relays. 
 Tor client is an onion proxy (OP). This needs to be installed into users device.

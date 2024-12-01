@@ -50,11 +50,42 @@ The HS selects multiple introduction points from the available nodes in the Tor 
 Summary of Fig. 6. Taxonomy for Tor attacks (Just the figure on page 2330.)
 Taxonomy for Tor Attacks focuses to de-anonymisation attacks. Attacks can be passive or active. They are categorized in 4 different types which can try to exploit 1. side channels, 2. entry and exit routers or 3. onion proxy, onion routers and servers or 4. hybrid attacks. The known attacks are listed in the picture under categories.   
 
-
 Halonen, Ollikainen, Rajala 2023: PhishSticks - The Ethical Hackers tool for BadUSB (Video, about 3 minutes)
+Reference: PhishSticks: PhishSticks - The Ethical Hackers tool for BadUSB Watchable: https://www.youtube.com/watch?v=bDzVevtZiWE Watched: 1.12.2024.
+
+Summary: Company's ceo gets an USB stick with a note that in it are the newest payroll information. CEO doesn't follow company's policy and he attaches it to his computer. In this phishstick is keylogger payload but there could be some other USB payload dropper attacks too. When attached to his computer phishstick will use injected keystrokes to open up Windows run and then types a oneliner that fetches the payload via Windows Powershell. This stick records the things CEO does on his computer and by that hacker gets CEO's user credentials. The logged data is stored in the TEMP folder of the victim and sent to the hacker. Phishstick removes the temp data after it has been sent. CEO goes unemployed but there can be quite significant punishments like jail or large monetary losses to company. 
 
 If you cannot or do not want to do the hands-on darknet tasks, the alternative task is: based on literature only (no hands on tests, no installation), compare anonymous/pseudonymous networks, such as TOR, I2P, Freenet and others. How do their goals, technology and other features differ? How are they similar? Add references. Link differences and benefits to technical and architecture aspects.
 
-c) Onion. In your own words, how does anonymity work in TOR? (e.g. how does it use: public keys, encryption, what algorithms? This subtask does not require tests with a computer.)
-d) What kind of the threat models could TOR fit? (This subtask does not require tests with a computer.)
-e) Don't stick that stick. How does PhishSticks attack work? Would a typical organization be vulnerable? Does this link to a broader category of attacks and defenses? How could the risk be mitigated? (This subtask does not require tests with a computer.) (If you want, you can view PhishSticks on Github and PhishSticks Youtube channel.
+Well I didn't want to do the hands on tasks with Tor so here is my comparison of anonymous networks.
+
+Tor. 
+
+At this homework 6 I have earlier described it's goals and technology. 
+
+I2P.
+Reference: Security and Privacy Academy: The Invisible Internet Project (I2P) Explained. Watchable: https://www.youtube.com/watch?v=XT_z7KpXcV0 Watched: 1.12.2024
+
+Dezentralized peer-to-peer anonymous network. The network consists of 50000 devices around the globe. Scattering your traffic. Encrypted access to dark web. E2E encryption using public key cryptography. 
+Differences to Tor: Unidirectional tunnels. Incoming and outgoing traffic is separated. Garlic routing. Original messages are divided into smaller messages called cloves. All submessages travels separately through the network to it's destination. It's very hard for hackers to crack the message.
+Goals are the same with I2P and Tor.
+Plus: every message is e2e encrypted so they are very secured. 
+Plus: It uses packet switching and it means high perfomance on network.
+Plus: privacy.
+Cons: difficult installation and usage (in Tor you just download onion proxy) 
+Cons: Users need to be logged in (same with Tor)
+Cons: Smaller user base than Tor, attacks are theoretically more likely
+Major differencies compared to Tor: I2P is more centralized because of peer-to-peer network. It uses garlic routing (Tor uses only one route). 
+
+Freenet.
+Reference: Freenet Project Inc. Websites. 2024. Readable: https://freenet.org/ Read: 1.12.2024. 
+
+
+
+c) Onion. In your own words, how does anonymity work in TOR? (e.g. how does it use: public keys, encryption, what algorithms? 
+
+d) What kind of the threat models could TOR fit? 
+
+e) Don't stick that stick. How does PhishSticks attack work? Would a typical organization be vulnerable? Does this link to a broader category of attacks and defenses? How could the risk be mitigated?
+
+As we are humans, it's easy to get someone attach unknown USB stick to their machine, because people are kind and could think that maybe some coworker has forgotten their USB stick. People want to open it that they could know who's it is and return it. So people are the vulnerability here like in many other attack cases of phishing. It goes with the content of social engineering by attackers. Risk can be mitigated by educating workers in general on phishing attacks and more specifically never attach USB sticks on computer. Those should be given to service desk who can safely check it if necessary.

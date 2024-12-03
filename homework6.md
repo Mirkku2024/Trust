@@ -1,13 +1,12 @@
 # Homework 6 Upside Down Iceberg
 Reference: https://terokarvinen.com/trust-to-blockchain/#homework
 
-Read and summarize (briefly, e.g. with some bullets)
+Read and summarize
 
 ## Dingledine, Mathewson and Syverson 2004: Tor: The second-generation onion router.
-Reference: Dingledine, Mathewson and Syverson 2004: Tor: The second-generation onion router. In USENIX security symposium (jufo level 2). Chapter:
-3 Design goals and assumptions
+Reference: Dingledine, Mathewson and Syverson 2004: Tor: The second-generation onion router. In USENIX security symposium (jufo level 2). Chapter 3 Design goals and assumptions
 
-Summary Chapter: 3 Design goals and assumptions
+Summary Chapter 3 Design goals and assumptions
 
 Main goals: Communications are linked from single user. There are several demands of Tor debloyability for example it has to be cheap to run it and it can't put responsibilities to third parties. Usability is main thing so there are more users and that's how anonymity is guaranteed. In this case usability is a key element of security requirements. The protocol must be flexible and specifications needs to be clear and that includes security parameters also. Tor aims to deploy a simple and stable system that integrates the best accepted approaches to protecting anonymity.
 Non-goals: Not peer-to peer because there still are some problems to solve. Not secure to e2e attacks but user can use own onion routers to lower the risk. No protocol normalization. If senders want anonymity from responders while using complex and variable protocols, Tor must be layered with a filtering proxy. By this separation Tor can also provide services that are anonymous to the network yet authenticated to the responder.
@@ -22,8 +21,7 @@ People are trying to protect their online privacy and it grows popularity of ano
 
 Summary of I Introduction
 
-Main use of low latency anonymous networks is to provide online privacy security for different kinds of use: private persons in totalitary countries, whistle blowers, military and business organizations with sensitive communications. The most popular service Tor provides anonymity to users and supports the deployment of anonymous services, known as hidden services. But also criminals has taken Tor into use and that's why governments also want to break it's anonymosity. This survey covers about 30 more de-anonymisation attacks than most past surveys. There has been used multi-level taxonomy to categorise de-anonymisation attacks on Tor. In this surveys has been classified and discussed each attack, focusing on the Tor circuit component(s) used and the method of execution. The practicality of those attacks has been analyzed. Finally survey highlights several significant Tor development milestones over the years that are relevant to deanonymisation attacks and discuss how security improvements
-have made some of the previously possible attacks unfeasible.
+Main use of low latency anonymous networks is to provide online privacy security for different kinds of use: private persons in totalitary countries, whistle blowers, military and business organizations with sensitive communications. The most popular service Tor provides anonymity to users and supports the deployment of anonymous services, known as hidden services. But also criminals has taken Tor into use and that's why governments also want to break it's anonymosity. This survey covers about 30 more de-anonymisation attacks than most past surveys. There has been used multi-level taxonomy to categorise de-anonymisation attacks on Tor. In this surveys has been classified and discussed each attack, focusing on the Tor circuit component(s) used and the method of execution. The practicality of those attacks has been analyzed. Finally survey highlights several significant Tor development milestones over the years that are relevant to deanonymisation attacks and discuss how security improvements have made some of the previously possible attacks unfeasible.
 
 Summary of II Background 
 
@@ -32,16 +30,14 @@ Tor client is an onion proxy (OP). This needs to be installed into users device.
 Directory Servers are a small set of trusted and known servers in the network that actively keep details about the status of the complete network. 
 Entry Node/Guard is the relay in the Tor network that the client directly connects to. 
 Exit Node is the final point it the circuit. Therefore, it knows the IP address of the destination server accessed via the Tor network. This is the last layer of encryption provided by the Tor network. 
-The Tor network supports Hidden Services (HS), also known as Onion Services because Tor gives anonymity to user but not to services they use. HS can be hosted on a
-node inside the Tor network or an external node and these domains ends in .onion.
+The Tor network supports Hidden Services (HS), also known as Onion Services because Tor gives anonymity to user but not to services they use. HS can be hosted on a node inside the Tor network or an external node and these domains ends in .onion.
 Introduction Points are random nodes selected by the HS to register its services with the Tor network. The HS then advertises these selected introduction points and its public key in the Hidden Service Directories (HSDirs).
 Rendezvous Point (RP) is a random Tor node selected by the client OP before the client initialises a connection with any of the introduction points advertised by the DS. The client selects two other nodes (entry and middle) and establishes a Tor circuit to the RP via these nodes. 
 Bridges are normal Tor relays that are not listed publicly in the main Tor directory. They replace guard nodes in the circuit.
 
 Standard Tor Circuit Establishment
 
-Before communicating over the Tor network, a Tor client must establish a circuit through the Tor network. The user is required to have the Onion Proxy (OP) installed on the
-device being used for browsing. The OP first contacts a DS and requests a list of active relays in the network. Then it selects three relays from the list to act as the entry, middle, and exit nodes, and incrementally creates a circuit by exchanging encryption keys with each node. The key exchange is done via the Diffie–Hellman handshake. Once this connection consisting of three hops has been established, the user can communicate with the intended destination server over the established circuit.
+Before communicating over the Tor network, a Tor client must establish a circuit through the Tor network. The user is required to have the Onion Proxy (OP) installed on the device being used for browsing. The OP first contacts a DS and requests a list of active relays in the network. Then it selects three relays from the list to act as the entry, middle, and exit nodes, and incrementally creates a circuit by exchanging encryption keys with each node. The key exchange is done via the Diffie–Hellman handshake. Once this connection consisting of three hops has been established, the user can communicate with the intended destination server over the established circuit.
 
 Circuit Establishment for Tor HS
 
@@ -50,12 +46,13 @@ The HS selects multiple introduction points from the available nodes in the Tor 
 Summary of Fig. 6. Taxonomy for Tor attacks (Just the figure on page 2330.)
 Taxonomy for Tor Attacks focuses to de-anonymisation attacks. Attacks can be passive or active. They are categorized in 4 different types which can try to exploit 1. side channels, 2. entry and exit routers or 3. onion proxy, onion routers and servers or 4. hybrid attacks. The known attacks are listed in the picture under categories.   
 
-Halonen, Ollikainen, Rajala 2023: PhishSticks - The Ethical Hackers tool for BadUSB (Video, about 3 minutes)
+## Halonen, Ollikainen, Rajala 2023: PhishSticks - The Ethical Hackers tool for BadUSB 
+
 Reference: PhishSticks: PhishSticks - The Ethical Hackers tool for BadUSB Watchable: https://www.youtube.com/watch?v=bDzVevtZiWE Watched: 1.12.2024.
 
-Summary: Company's ceo gets an USB stick with a note that in it are the newest payroll information. CEO doesn't follow company's policy and he attaches it to his computer. In this phishstick is keylogger payload but there could be some other USB payload dropper attacks too. When attached to his computer phishstick will use injected keystrokes to open up Windows run and then types a oneliner that fetches the payload via Windows Powershell. This stick records the things CEO does on his computer and by that hacker gets CEO's user credentials. The logged data is stored in the TEMP folder of the victim and sent to the hacker. Phishstick removes the temp data after it has been sent. CEO goes unemployed but there can be quite significant punishments like jail or large monetary losses to company. 
+Summary: Company's CEO gets an USB stick with a note that in it are the newest payroll information. CEO doesn't follow company's policy and he attaches it to his computer. In this phishstick is keylogger payload but there could be some other USB payload dropper attacks too. When attached to his computer phishstick will use injected keystrokes to open up Windows run and then types a oneliner that fetches the payload via Windows Powershell. This stick records the things CEO does on his computer and by that hacker gets CEO's user credentials. The logged data is stored in the TEMP folder of the victim and sent to the hacker. Phishstick removes the temp data after it has been sent. CEO goes unemployed but there can be quite significant punishments like jail or large monetary losses to company. 
 
-If you cannot or do not want to do the hands-on darknet tasks, the alternative task is: based on literature only (no hands on tests, no installation), compare anonymous/pseudonymous networks, such as TOR, I2P, Freenet and others. How do their goals, technology and other features differ? How are they similar? Add references. Link differences and benefits to technical and architecture aspects.
+## If you cannot or do not want to do the hands-on darknet tasks, the alternative task is: based on literature only (no hands on tests, no installation), compare anonymous/pseudonymous networks, such as TOR, I2P, Freenet and others. How do their goals, technology and other features differ? How are they similar? Add references. Link differences and benefits to technical and architecture aspects.
 
 Well I didn't want to do the hands on tasks with Tor so here is my comparison of anonymous networks.
 
@@ -80,12 +77,28 @@ Major differencies compared to Tor: I2P is more centralized because of peer-to-p
 Freenet.
 Reference: Freenet Project Inc. Websites. 2024. Readable: https://freenet.org/ Read: 1.12.2024. 
 
+Dezentralized peer-to-peer anonymous network. Every peer contributes to a fault-tolerant collective, ensuring services are always available and robust. Every system built on Freenet is fully interoperable by default. The platform’s user-friendly decentralized applications are scalable, interoperable, and secured with cryptography. Freenet is a global key-value store that relies on small world routing for decentralization and scalability. Keys in this key-value store are WebAssembly code. These webassembly keys are also known as contracts, and the values are also known as the contract’s state. Freenet provides a local HTTP proxy that allows data such as a single-page application to be downloaded to a web browser. This application can then connect to the Freenet peer through a websocket connection and through this interact with the Freenet network. Anonymity: While the previous version was designed with a focus on anonymity, the current version does not offer built-in anonymity but allows for a choice of anonymizing systems to be layered on top.
+
+Freenet functions as an end-to-end operating system for decentralized apps. Similar to how you install a web browser once and gain access to applications like Gmail, Facebook, and Reddit without installing additional software, Freenet provides seamless access to a wide range of decentralized applications directly within your browser.
+
+With Freenet, you can discover apps through a decentralized search engine. Obtain apps through Freenet. Use apps entirely on Freenet. Additionally, you don’t have to use Freenet through a browser. The “Freenet core” is small (<10MB) and can be easily embedded in other software, which can then communicate with the Freenet core over an HTTP/WebSocket API.
+
+Goals: Freenet is a complete solution. Freenet functions as an end-to-end operating system for decentralized apps.
+
+Comparison:
+
+Similarities: all are anonymous dezentralized networks. All use cryptography as a key element in the solution.
+Differencies: all of them work technically/architecturally in a different way. I2P and Freenet are peer-2-peer solutions while Tor's communications are linked to single user. Tor has widest userbase. I2P lacks usability. Tor gives anonymity to user but not to services they use. Before communicating over the Tor network, a Tor client must establish a circuit through the Tor network only through one route. In I2P original messages are divided into smaller messages called cloves. Freenet functions as an end-to-end operating system for decentralized apps. 
+
+## c) Onion. In your own words, how does anonymity work in TOR? (e.g. how does it use: public keys, encryption, what algorithms? 
 
 
-c) Onion. In your own words, how does anonymity work in TOR? (e.g. how does it use: public keys, encryption, what algorithms? 
 
-d) What kind of the threat models could TOR fit? 
+Clients choose a path through the network and build a circuit, in which each node (or “onion router” or “OR”) in the path knows its predecessor and successor, but no other nodes in the circuit. Traffic flows down the circuit in fixed-size cells, which are unwrapped by a symmetric key at each node (like the layers of an onion) and relayed downstream. , Tor now uses an incremental or telescoping path-building design, where the initiator negotiates session keys with each successive hop in the circuit. Once these keys are deleted, subsequently compromised nodes cannot decrypt old traffic. Certain more trusted nodes act as directory servers: they provide signed directories describing known routers and their current
+state. 
 
-e) Don't stick that stick. How does PhishSticks attack work? Would a typical organization be vulnerable? Does this link to a broader category of attacks and defenses? How could the risk be mitigated?
+## d) What kind of the threat models could TOR fit? 
+
+## e) Don't stick that stick. How does PhishSticks attack work? Would a typical organization be vulnerable? Does this link to a broader category of attacks and defenses? How could the risk be mitigated?
 
 As we are humans, it's easy to get someone attach unknown USB stick to their machine, because people are kind and could think that maybe some coworker has forgotten their USB stick. People want to open it that they could know who's it is and return it. So people are the vulnerability here like in many other attack cases of phishing. It goes with the content of social engineering by attackers. Risk can be mitigated by educating workers in general on phishing attacks and more specifically never attach USB sticks on computer. Those should be given to service desk who can safely check it if necessary.

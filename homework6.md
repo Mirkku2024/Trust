@@ -52,7 +52,7 @@ Reference: PhishSticks: PhishSticks - The Ethical Hackers tool for BadUSB Watcha
 
 Summary: Company's CEO gets an USB stick with a note that in it are the newest payroll information. CEO doesn't follow company's policy and he attaches it to his computer. In this phishstick is keylogger payload but there could be some other USB payload dropper attacks too. When attached to his computer phishstick will use injected keystrokes to open up Windows run and then types a oneliner that fetches the payload via Windows Powershell. This stick records the things CEO does on his computer and by that hacker gets CEO's user credentials. The logged data is stored in the TEMP folder of the victim and sent to the hacker. Phishstick removes the temp data after it has been sent. CEO goes unemployed but there can be quite significant punishments like jail or large monetary losses to company. 
 
-## If you cannot or do not want to do the hands-on darknet tasks, the alternative task is: based on literature only (no hands on tests, no installation), compare anonymous/pseudonymous networks, such as TOR, I2P, Freenet and others. How do their goals, technology and other features differ? How are they similar? Add references. Link differences and benefits to technical and architecture aspects.
+## If you cannot or do not want to do the hands-on darknet tasks, the alternative task is: compare anonymous/pseudonymous networks, such as TOR, I2P, Freenet and others. How do their goals, technology and other features differ? How are they similar? Add references. Link differences and benefits to technical and architecture aspects.
 
 Well I didn't want to do the hands on tasks with Tor so here is my comparison of anonymous networks.
 
@@ -92,12 +92,17 @@ Differencies: all of them work technically/architecturally in a different way. I
 
 ## c) Onion. In your own words, how does anonymity work in TOR? (e.g. how does it use: public keys, encryption, what algorithms? 
 
+First user starts Tor client (onion proxy/OP) and then client starts to create the circuit with three nodes. The OP creates a circuit by exchanging encryption keys with each node. The key exchange is done with the Diffie–Hellman handshake. The OP starts to create first part of circuit by giving negotiaded key to node 1 using RSA encryption. First node returns negotiaded key with secure hash function. Then OP creates the second part of the circuit and returns information gotten from first node through that node to reach second node. New negotiaded key with it's hash functions are returned through first node to OP. Then OP starts to create the last node of the circuit. It returns the information gotten from second node through nodes 1 and 2 to node 3 which returns third negotiaded key with secure hash function through nodes 2 and 1 to onion proxy. Now there is secure anonymous network created.
 
-
-Clients choose a path through the network and build a circuit, in which each node (or “onion router” or “OR”) in the path knows its predecessor and successor, but no other nodes in the circuit. Traffic flows down the circuit in fixed-size cells, which are unwrapped by a symmetric key at each node (like the layers of an onion) and relayed downstream. , Tor now uses an incremental or telescoping path-building design, where the initiator negotiates session keys with each successive hop in the circuit. Once these keys are deleted, subsequently compromised nodes cannot decrypt old traffic. Certain more trusted nodes act as directory servers: they provide signed directories describing known routers and their current
-state. 
+Reference: Reference: Karunanayake, Ahmed, Malaney, Islam and Jha 2021: De-anonymisation attacks on tor: A survey. In IEEE Communications Surveys & Tutorials Fig. 3. Tor circuit creation and data transmission. Readable: https://ieeexplore.ieee.org/ielx7/9739/9621320/09471821.pdf Read: 4.12.2024
 
 ## d) What kind of the threat models could TOR fit? 
+
+A global passive adversary
+Traffic confirmation attacks
+Traffic analysis attacks
+
+Reference: Dingledine, Mathewson and Syverson 2004: Tor: The second-generation onion router. Chapter 3.1 Threat model Readable: https://css.csail.mit.edu/6.858/2022/readings/tor-design.pdf Read: 4.12.2024
 
 ## e) Don't stick that stick. How does PhishSticks attack work? Would a typical organization be vulnerable? Does this link to a broader category of attacks and defenses? How could the risk be mitigated?
 

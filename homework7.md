@@ -12,7 +12,7 @@ Article: Information Security Awareness Literature Review: Focus Area for Measur
 Writers: Rizal, M. & Setiawan, B.
 Released: 09/2024 in Procedia computer science vol. 234
 
-Summary: Information Security awareness of individuals is key element of information security. You can use HAIS-Q tool to measure and improve this. Information security awareness training shapes information security culture in organizations. When employees have the knowledge then attitudes and behaviors will maintain good information security within the organization. 
+Summary: Information Security awareness of individuals is key element of information security. You can use HAIS-Q (Human Aspect of Information Security Questionnaire) tool to measure and improve this. Information security awareness training shapes information security culture in organizations. When employees have the knowledge then attitudes and behaviors will maintain good information security within the organization. Focus areas on awareness measurement can point out issues that need action points to increase security awareness. This research aims to determine the focus areas used in information security awareness measurement research. In this research they found 57 relevant articles for study and selected 18 most relevant out of those. Parson has made earlier research on this topic and pointed out some focus areas which also has been used in some other studies. These areas are:  password management, email use, internet use, social media use, mobile devices, incident reporting and information handling. Parson's research was conducted by testing the Human Aspect of Information Security Questionnaire (HAIS-Q). The most important thing was password management. 
 
 Reference: Rizal, M. A. & Setiawan, B. 2024. Information Security Awareness Literature Review: Focus Area for Measurement Instruments. Procedia computer science, 234, pp. 1420-1427. Readable: https://www-sciencedirect-com.ezproxy.haaga-helia.fi/science/article/pii/S187705092400499X Read: 7.12.2024.
 
@@ -26,3 +26,5 @@ Jufo luokitteli julkaisun tasolle 1
 Voluntary bonus. List and link
 
 a) Improved. Any tasks that you have considerably improved after cross review b) Voluntary. Any voluntary bonus tasks you have completed.
+
+

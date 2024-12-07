@@ -1,4 +1,4 @@
-# Homework 7 & 8
+# Homework 7
 Reference: https://terokarvinen.com/trust-to-blockchain/#homework
 
 ## Homework 7 Follow the new science in infosec. Jump right into high-quality articles. Save your time, read review article first.
